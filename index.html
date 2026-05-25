@@ -51,7 +51,7 @@
 
       <div class="grid-libros">
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/cleanCode.png" alt="Portada del libro Clean Code" />
           <header>
             <h3 class="libro-titulo" s>Clean Code</h3>
@@ -60,9 +60,9 @@
           <footer>
             <small class="libro-publicacion">Publicado en 2008</small>
           </footer>
-        </card>
+        </article>
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/IntroductionAlgorithms.webp"
             alt="Portada del libro Introduction to Algorithms" />
           <header>
@@ -72,9 +72,9 @@
           <footer>
             <small class="libro-publicacion">Publicado en 2009</small>
           </footer>
-        </card>
+        </article>
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/designPatterns.jpg" alt="Portada del libro Design Patterns" />
           <header>
             <h3 class="libro-titulo">Design Patterns</h3>
@@ -83,9 +83,9 @@
           <footer>
             <small class="libro-publicacion">Publicado en 1994</small>
           </footer>
-        </card>
+        </article>
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/python.jpg" alt="Portada del libro Python for Beginners" />
           <header>
             <h3 class="libro-titulo">Python for Beginners</h3>
@@ -94,9 +94,9 @@
           <footer>
             <small class="libro-publicacion">Publicado en 2020</small>
           </footer>
-        </card>
+        </article>
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/javaScript.webp" alt="Portada del libro JavaScript: The Good Parts" />
           <header>
             <h3 class="libro-titulo">JavaScript: The Good Parts</h3>
@@ -105,9 +105,9 @@
           <footer>
             <small class="libro-publicacion">Publicado en 2008</small>
           </footer>
-        </card>
+        </article>
 
-        <card class="libro-card">
+        <article class="libro-card">
           <img class="libro" src="/public/java.webp" alt="Portada del libro Java Programming" />
           <header>
             <h3 class="libro-titulo">Java Programming</h3>
@@ -116,7 +116,7 @@
           <footer>
             <small class="libro-publicacion">Publicado en 1996</small>
           </footer>
-        </card>
+        </article>
 
       </div>
     </section>
@@ -228,8 +228,8 @@
         </p>
         <p class="parrafo-contacto">
           📞 Teléfono:
-          <a class="telefono-contacto" href="tel:+51999999999">
-            +51 999 999 999
+          <a class="telefono-contacto" href="tel:+51916556938">
+            +51 916 556 938
           </a>
         </p>
         <section class="correos-especiales">
@@ -371,38 +371,7 @@
     </div>
 
   </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script>
-    const carrusel = document.getElementById("carrusel");
-
-    document.getElementById("next").addEventListener("click", () => {
-      carrusel.scrollBy({
-        left: 800,
-        behavior: "smooth"
-      });
-    });
-
-    document.getElementById("prev").addEventListener("click", () => {
-      carrusel.scrollBy({
-        left: -800,
-        behavior: "smooth"
-      });
-    });
-  </script>
-
+  <script src="/src/main.js"></script>
 </body>
 
 </html>
