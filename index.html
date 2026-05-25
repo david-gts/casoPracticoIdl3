@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--codificacion -->
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#8f7ada" />
+  <title>casopracticoidl03</title>
+  <!--Una descripcion es importante para el SEO-->
+  <meta name="description" content="Este sitio web es para una busqueda de libros de forma sencilla" />
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+
+<body>
+  <header>
+    <section class="sectionLogo" id="inicio">
+      <img class="logoBiblioteca" src="/public/logo.png" alt="Logo de la Biblioteca Municipal" />
+      <h1 class="primerTitulo">Biblioteca: "Libros Tech"</h1>
+    </section>
+
+    <section>
+      <nav class="navMenu">
+        <a class="navLink" href="/">Inicio</a>
+        <a class="navLink" href="#inicio">Buscar Libros</a>
+        <a class="navLink" href="#libros">Libros Disponibles</a>
+        <a class="navLink" href="#preguntas">Preguntas Frecuentes</a>
+        <a class="navLink" href="#nosotros">Sobre Nosotros</a>
+        <button class="navBoton">
+          <a class="navLink" href="#contacto">Contacto</a>
+        </button>
+      </nav>
+    </section>
+  </header>
+
+
+  <main>
+    <section class="sectionBienvenida">
+      <h2 class="tituloBienvenida1">Bienvenido a nuestra biblioteca virtual</h2>
+      <h2 class="tituloBienvenida2" id="buscar">Buscar Libros</h2>
+      <form action="/buscar" method="get">
+        <label class="search-label" for="tituloAutor">Título/Autor:</label>
+        <input class="search-input" type="text" id="tituloAutor" name="tituloAutor" />
+        <button class="search-button" type="submit">Buscar</button>
+      </form>
+    </section>
+
+    <section class="sectionLibros" id="libros">
+      <h2 class="tituloLibros">Libros disponibles sobre programación</h2>
+
+      <div class="grid-libros">
+
+        <card class="libro-card">
+          <img class="libro" src="/public/cleanCode.png" alt="Portada del libro Clean Code" />
+          <header>
+            <h3 class="libro-titulo" s>Clean Code</h3>
+          </header>
+          <p class="libro-autor">Autor: Robert C. Martin</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 2008</small>
+          </footer>
+        </card>
+
+        <card class="libro-card">
+          <img class="libro" src="/public/IntroductionAlgorithms.webp"
+            alt="Portada del libro Introduction to Algorithms" />
+          <header>
+            <h3 class="libro-titulo">Introduction to Algorithms</h3>
+          </header>
+          <p class="libro-autor">Autor: Thomas H. Cormen</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 2009</small>
+          </footer>
+        </card>
+
+        <card class="libro-card">
+          <img class="libro" src="/public/designPatterns.jpg" alt="Portada del libro Design Patterns" />
+          <header>
+            <h3 class="libro-titulo">Design Patterns</h3>
+          </header>
+          <p class="libro-autor">Autor: Epich Gamma y otros</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 1994</small>
+          </footer>
+        </card>
+
+        <card class="libro-card">
+          <img class="libro" src="/public/python.jpg" alt="Portada del libro Python for Beginners" />
+          <header>
+            <h3 class="libro-titulo">Python for Beginners</h3>
+          </header>
+          <p class="libro-autor">Autor: John Doe</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 2020</small>
+          </footer>
+        </card>
+
+        <card class="libro-card">
+          <img class="libro" src="/public/javaScript.webp" alt="Portada del libro JavaScript: The Good Parts" />
+          <header>
+            <h3 class="libro-titulo">JavaScript: The Good Parts</h3>
+          </header>
+          <p class="libro-autor">Autor: Douglas Crockford</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 2008</small>
+          </footer>
+        </card>
+
+        <card class="libro-card">
+          <img class="libro" src="/public/java.webp" alt="Portada del libro Java Programming" />
+          <header>
+            <h3 class="libro-titulo">Java Programming</h3>
+          </header>
+          <p class="libro-autor">Autor: James Gosling</p>
+          <footer>
+            <small class="libro-publicacion">Publicado en 1996</small>
+          </footer>
+        </card>
+
+      </div>
+    </section>
+
+    <section class="contenedor-acordeones" id="preguntas">
+      <h2 class="titulo-preguntas">Preguntas Frecuentes</h2>
+      <div class="wrapper-carrusel">
+
+        <button class="btn-carrusel" id="prev">
+          ❮
+        </button>
+        <div class="carrusel-preguntas" id="carrusel">
+          <details open class="acordeon">
+            <summary class="summary-pregunta">¿Como puedo buscar libros en la biblioteca?</summary>
+            <p class="respuesta-pregunta">
+              Puedes buscar libros utilizando la barra de búsqueda en la página principal. Simplemente ingresa el
+              título, autor
+              o palabras clave relacionadas con el libro que estás buscando y haz clic en el botón de búsqueda. Nuestra
+              plataforma te mostrará una lista de resultados relevantes para que puedas encontrar fácilmente el libro
+              que
+              deseas leer o prestar.
+            </p>
+          </details>
+
+          <details open class="acordeon">
+            <summary class="summary-pregunta">¿Puedo reservar un libro en línea?</summary>
+            <p class="respuesta-pregunta">
+              Sí, puedes reservar libros en línea a través de nuestra plataforma digital. Simplemente selecciona el
+              libro que
+              deseas reservar y sigue las instrucciones para completar el proceso de reserva. Recibirás una confirmación
+              por correo electrónico con los detalles de tu reserva y la fecha en que podrás recoger el libro en la
+              biblioteca.
+            </p>
+
+          </details>
+
+          <details open class="acordeon">
+            <summary class="summary-pregunta">¿Cuáles son los horarios de la biblioteca?</summary>
+            <p class="respuesta-pregunta">
+              Nuestra biblioteca está abierta de lunes a viernes de 9:00 a.m. a 6:00 p.m. y los sábados de 10:00 a.m. a
+              4:00 p.m. Cerramos los domingos y los días festivos. Te recomendamos verificar nuestro sitio web o
+              contactarnos
+              directamente para obtener información actualizada sobre horarios especiales o cambios en el horario de
+              atención.
+            </p>
+          </details>
+
+          <details open class="acordeon">
+            <summary class="summary-pregunta">¿Cómo puedo contactar a la biblioteca?</summary>
+            <p class="respuesta-pregunta">
+              Puedes contactarnos a través de nuestro formulario de contacto en la sección de contacto de nuestro sitio
+              web.
+              También puedes enviarnos un correo electrónico a biblioteca_tech@gmail.com
+            </p>
+          </details>
+
+          <details open class="acordeon">
+            <summary class="summary-pregunta">¿Dónde se encuentra la biblioteca?</summary>
+            <p class="respuesta-pregunta">
+              Nuestra biblioteca se encuentra en la Avenida Principal 123, Lima, Perú. Estamos ubicados en el centro de
+              la ciudad, cerca de la estación de metro y con fácil acceso en transporte público. Si necesitas
+              indicaciones
+              para llegar a nuestra ubicación, no dudes en contactarnos y estaremos encantados de ayudarte.
+            </p>
+          </details>
+        </div>
+
+        <button class="btn-carrusel" id="next">
+          ❯
+        </button>
+      </div>
+    </section>
+
+    <section class="sectionNosotros" id="nosotros">
+      <h2 class="tituloNosotros">Sobre Nosotros</h2>
+      <div>
+        <p class="parrafoNosotros">En la Biblioteca Municipal "LIBROS Dev", nos apasiona fomentar el amor por la lectura
+          y el aprendizaje.
+          Nuestra misión es proporcionar acceso a una amplia variedad de libros y recursos educativos para la
+          comunidad. Contamos con un equipo dedicado de bibliotecarios que están siempre dispuestos a ayudar a los
+          visitantes a encontrar lo que necesitan. Además, ofrecemos programas y eventos para promover la lectura y el
+          desarrollo personal. ¡Ven y descubre todo lo que nuestra biblioteca tiene para ofrecer!</p>
+      </div>
+      <div class="contenedor-mision-vision">
+        <h3 class="titulo-mision-vision">Mision</h3>
+        <p class="parrafo-mision-vision">Nuestra misión es proporcionar acceso a una amplia variedad de libros y
+          recursos educativos para la
+          comunidad, fomentando el amor por la lectura y el aprendizaje.</p>
+      </div>
+      <div>
+        <h3 class="titulo-mision-vision">Vision</h3>
+        <p class="parrafo-mision-vision">Nuestra visión es ser una biblioteca líder en la promoción de la lectura y el
+          desarrollo personal, ofreciendo programas y eventos innovadores para la comunidad.</p>
+      </div>
+
+    </section>
+
+    <section class="sectionContacto" id="contacto">
+      <section class="section-contacto-info">
+        <h2 class="titulo-contacto">Contáctanos</h2>
+        <p class="parrafo-contacto">
+          ¿Tienes dudas, sugerencias o necesitas ayuda para encontrar un libro?
+          Nuestro equipo de la Biblioteca Virtual Tech está listo para ayudarte.
+        </p>
+        <p class="parrafo-contacto">
+          📧 Correo principal:
+          <a class="correo-principal"
+            href="mailto:bibliotecavirtual@techlibrary.com">bibliotecavirtual@techlibrary.com</a>
+        </p>
+        <p class="parrafo-contacto">
+          📞 Teléfono:
+          <a class="telefono-contacto" href="tel:+51999999999">
+            +51 999 999 999
+          </a>
+        </p>
+        <section class="correos-especiales">
+
+          <article class="correo-especial">
+            <h3 class="titulo-correo">Soporte General</h3>
+            <a class="correo-especial" href="mailto:soporte@techlibrary.com">soporte@techlibrary.com</a>
+          </article>
+
+          <article class="correo-especial">
+            <h3 class="titulo-correo">Libros de Programación</h3>
+            <a class="correo-especial" href="mailto:programacion@techlibrary.com">programacion@techlibrary.com</a>
+          </article>
+
+          <article class="correo-especial">
+            <h3 class="titulo-correo">Recursos de IA y Ciencia de Datos</h3>
+            <a class="correo-especial" href="mailto:ia-datos@techlibrary.com">ia-datos@techlibrary.com</a>
+          </article>
+
+          <article class="correo-especial">
+            <h3 class="titulo-correo">Biblioteca de Diseño UX/UI</h3>
+            <a class="correo-especial" href="mailto:uxui@techlibrary.com">uxui@techlibrary.com</a>
+          </article>
+
+          <article class="correo-especial">
+            <h3 class="titulo-correo">Publicaciones y Recursos Académicos</h3>
+            <a class="correo-especial" href="mailto:publicaciones@techlibrary.com">publicaciones@techlibrary.com</a>
+          </article>
+
+        </section>
+      </section>
+      <section class="section-contacto-formulario">
+        <h2 class="tituloContacto">Formulario de contacto</h2>
+        <form class="form-contacto" method="post" action="/contacto">
+          <fieldset class="fieldset-contacto">
+            <legend class="legend-contacto">Informacion personal</legend>
+            <div>
+              <label class="label-contacto">
+                Nombres:
+                <input class="input-contacto" type="text" name="nombres" required placeholder="David Richard" />
+              </label>
+            </div>
+
+            <div>
+              <label class="label-contacto">
+                Apellidos:
+                <input class="input-contacto" type="text" name="apellidos" required placeholder="Gutierrez Carcausto" />
+              </label>
+            </div>
+
+            <div>
+              <label class="label-contacto">
+                Correo electrónico:
+                <input class="input-contacto" type="email" name="email" required placeholder="davidgts.dev@gmail.com" />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset-contacto">
+            <legend class="legend-contacto">Informacion adicional</legend>
+            <div>
+              <label class="label-contacto">
+                Celular:
+                <input class="input-contacto" type="tel" name="telefono" placeholder="+51988776622"
+                  pattern="^\+51\d{9}$" required />
+              </label>
+            </div>
+          </fieldset>
+
+          <button class="btn-contacto" type="submit">Enviar</button>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <!--
+    <section class="section-footer">
+      <p class="parrafo-footer">&copy; 2024 Biblioteca Municipal "LIBROS Dev". Todos los derechos reservados.</p>
+
+      <a class="correo-footer" href="mailto:info@bibliotecamunicipal.com">Contactar por correo electrónico</a>
+      <a class="red-social" href="https://www.facebook.com/bibliotecamunicipal" target="_blank">Facebook</a>
+      <a class="telefono-footer" href="tel:+1234567890">Llamar al +1 (234) 567-890</a>
+      <a class="whatsapp-footer" href="https://wa.me/1234567890" target="_blank">WhatsApp</a>
+    </section>
+  </footer>
+  -->
+  <footer class="footer">
+
+    <section class="footer-container">
+
+      <div class="footer-brand">
+        <h2 class="titulo-footer">Bibliotech</h2>
+        <p class="parrafo-footer">
+          Tu biblioteca tecnológica online para aprender programación,
+          desarrollo web, inteligencia artificial y mucho más.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3 class="titulo-footer">Enlaces</h3>
+        <a class="link-footer" href="#inicio">Inicio</a>
+        <a class="link-footer" href="#libros">Libros</a>
+        <a class="link-footer" href="#preguntas">Preguntas Frecuentes</a>
+        <a class="link-footer" href="#contacto">Contacto</a>
+      </div>
+
+      <div class="footer-contact">
+        <h3 class="titulo-footer">Contacto</h3>
+        <p>
+          <a class="parrafo-footer" href="mailto:contacto@bibliotech.com">Email: contacto@bibliotech.com</a>
+        </p>
+        <p>
+          <a class="parrafo-footer" href="https://wa.me/51916556938" target="_blank">WhatsApp: +51 916 556 938</a>
+        </p>
+        <p class="parrafo-footer">Lima, Perú</p>
+      </div>
+
+      <div>
+        <h3 class="titulo-footer">Síguenos</h3>
+        <div class="icono-redes-container">
+          <img class="icono-redes" src="/public/facebook.png" alt="Facebook" />
+          <a class="social-footer" href="https://www.facebook.com/" target="_blank">Facebook</a>
+        </div>
+
+        <div class="icono-redes-container">
+          <img class="icono-redes" src="/public/x.png" alt="Twitter" />
+          <a class="social-footer" href="https://www.twitter.com/" target="_blank">Twitter (X)</a>
+        </div>
+
+        <div class="icono-redes-container">
+          <img class="icono-redes" src="/public/instagram.png" alt="Instagram" />
+          <a class="social-footer" href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p>© 2026 Bibliotech. Todos los derechos reservados.</p>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    const carrusel = document.getElementById("carrusel");
+
+    document.getElementById("next").addEventListener("click", () => {
+      carrusel.scrollBy({
+        left: 800,
+        behavior: "smooth"
+      });
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      carrusel.scrollBy({
+        left: -800,
+        behavior: "smooth"
+      });
+    });
+  </script>
+
+</body>
+
+</html>
