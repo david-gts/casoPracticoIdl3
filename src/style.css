@@ -82,7 +82,7 @@ body {
 
 .sectionBienvenida {
   height: 70vh;
-  background-image: url('public/portada1.png');
+  background-image: url('/portada1.png');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -228,7 +228,7 @@ body {
 .contenedor-acordeones {
   padding: 5rem 0;
   overflow: hidden;
-  background-image: url('public/fondo1.png');
+  background-image: url('/fondo1.png');
 background-size: cover;
 }
 
@@ -329,7 +329,7 @@ background-size: cover;
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url('public/fond7.jpg');
+  background-image: url('/fond7.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.4;
